@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>laget.Limiter.Stores.Mongo</id>
+    <title>laget.Limiter.Stores.Mongo</title>
+    <version>$version$</version>
+    <authors>gonace,laget.se</authors>
+    <owners>laget.se</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MongoDB store implementation for laget.Limiter...</description>
+    <summary></summary>
+    <license type="expression">MIT</license>
+    <projectUrl>https://laget.se</projectUrl>
+    <icon>assets\icon.png</icon>
+    <repository type="git" url="https://github.com/laget-se/laget.Limiter.Stores.Mongo" branch="master" />
+    <dependencies>
+      <group targetFramework="netstandard2.1"></group>
+      <group targetFramework="netstandard2.0"></group>
+      <group targetFramework="netcoreapp3.1"></group>
+      <group targetFramework="netcoreapp2.1"></group>
+      <group targetFramework="net48"></group>
+      <group targetFramework="net472"></group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\assets\icon.png" target="assets\" />
+    <file src=".\bin\Release\netstandard2.1\*" target="lib\netstandard2.1\" />
+    <file src=".\bin\Release\netstandard2.0\*" target="lib\netstandard2.0\" />
+    <file src=".\bin\Release\netcoreapp3.1\*" target="lib\netcoreapp3.1\" />
+    <file src=".\bin\Release\netcoreapp2.1\*" target="lib\netcoreapp2.1\" />
+    <file src=".\bin\Release\net48\*" target="lib\net48\" />
+    <file src=".\bin\Release\net472\*" target="lib\net472\" />
+  </files>
+</package>
