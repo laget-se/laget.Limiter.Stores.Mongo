@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MongoDB store implementation for laget.Limiter...</description>
     <summary></summary>
-    <license type="expression">MIT</license>
+    <license type="expression">Apache-2.0</license>
     <projectUrl>https://laget.se</projectUrl>
     <icon>assets\icon.png</icon>
     <repository type="git" url="https://github.com/laget-se/laget.Limiter.Stores.Mongo" branch="master" />
