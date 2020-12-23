@@ -2,6 +2,7 @@
 MongoDB store implementation for laget.Limiter...
 
 ![Nuget](https://img.shields.io/nuget/v/laget.Limiter.Stores.Mongo)
+![Nuget](https://img.shields.io/nuget/dt/laget.Limiter.Stores.Mongo)
 
 ## Usage
 > You can specifiy that a limiter should be used by the following
