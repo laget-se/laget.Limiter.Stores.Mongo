@@ -21,9 +21,20 @@ namespace laget.Limiter.Stores
 
     public class MongoStore : IStore
     {
-        readonly IMongoCollection<Call> _store;
+        private readonly IMongoCollection<Call> _store;
+        private readonly TimeSpan _ttl;
 
-        public MongoStore(MongoUrl url, string collection = "calls")
+        public MongoStore(MongoUrl url)
+            : this(url, TimeSpan.FromHours(1), "calls")
+        {
+        }
+
+        public MongoStore(MongoUrl url, TimeSpan ttl)
+            : this(url, ttl, "calls")
+        {
+        }
+
+        public MongoStore(MongoUrl url, TimeSpan ttl, string collection = "calls")
         {
             var client = new MongoClient(url);
 
@@ -35,6 +46,7 @@ namespace laget.Limiter.Stores
             });
 
             _store = database.GetCollection<Call>(collection);
+            _ttl = ttl;
 
             EnsureIndexes();
         }
@@ -62,12 +74,12 @@ namespace laget.Limiter.Stores
             _store.DeleteMany(filter);
         }
 
-        void EnsureIndexes()
+        private void EnsureIndexes()
         {
             var builder = Builders<Call>.IndexKeys;
             var indexes = new List<CreateIndexModel<Call>>
             {
-                new CreateIndexModel<Call>(builder.Ascending(_ => _.CreatedAt), new CreateIndexOptions { Background = true, ExpireAfter = TimeSpan.FromHours(3) }),
+                new CreateIndexModel<Call>(builder.Ascending(_ => _.CreatedAt), new CreateIndexOptions { Background = true, ExpireAfter = _ttl }),
                 new CreateIndexModel<Call>(builder.Ascending(_ => _.Value), new CreateIndexOptions { Background = true, Unique = true })
             };
             _store.Indexes.CreateMany(indexes);
