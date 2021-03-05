@@ -15,28 +15,28 @@
     <repository type="git" url="https://github.com/laget-se/laget.Limiter.Stores.Mongo" branch="master" />
     <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
       <group targetFramework="netstandard2.0">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
       <group targetFramework="netcoreapp3.1">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
       <group targetFramework="netcoreapp2.1">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
       <group targetFramework="net48">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
       <group targetFramework="net472">
-        <dependency id="laget.Limiter" version="1.0.14" />
-        <dependency id="MongoDb.Driver" version="2.11.6" />
+        <dependency id="laget.Limiter" version="1.0.15" />
+        <dependency id="MongoDb.Driver" version="2.12.0" />
       </group>
     </dependencies>
   </metadata>
