@@ -16,27 +16,27 @@
     <dependencies>
       <group targetFramework="netstandard2.1">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="netstandard2.0">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="netcoreapp3.1">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="netcoreapp2.1">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="net48">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="net472">
         <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.2" />
+        <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
     </dependencies>
   </metadata>
