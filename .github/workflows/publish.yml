@@ -1,0 +1,45 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore --configuration Release
+    - name: Test
+      run: dotnet test --no-build --configuration Release --verbosity normal
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: tests
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build laget.Limiter.Stores/laget.Limiter.Stores.csproj --no-restore --configuration Release
+    - name: Publish
+      uses: laget-se/publish-nuget@v2.6.7
+      with:
+        PROJECT_FILE_PATH: laget.Limiter.Stores/laget.Limiter.Stores.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        NUSPEC_FILE: laget.Limiter.Stores.Mongo.nuspec
+        VERSION_STATIC: "1.1.${{github.run_number}}"
