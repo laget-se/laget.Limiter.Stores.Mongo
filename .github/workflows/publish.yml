@@ -35,11 +35,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build laget.Limiter.Stores.Mongo/laget.Limiter.Stores.Mongo.csproj --no-restore --configuration Release
+      run: dotnet build laget.Limiter.Stores.Mongo/laget.Limiter.Stores.csproj --no-restore --configuration Release
     - name: Publish
       uses: laget-se/publish-nuget@v2.6.7
       with:
-        PROJECT_FILE_PATH: laget.Limiter.Stores.Mongo/laget.Limiter.Stores.Mongo.csproj
+        PROJECT_FILE_PATH: laget.Limiter.Stores/laget.Limiter.Stores.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
         NUSPEC_FILE: laget.Limiter.Stores.Mongo.nuspec
         VERSION_STATIC: "1.1.${{github.run_number}}"
