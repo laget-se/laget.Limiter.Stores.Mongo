@@ -15,27 +15,11 @@
     <repository type="git" url="https://github.com/laget-se/laget.Limiter.Stores.Mongo" branch="master" />
     <dependencies>
       <group targetFramework="netstandard2.1">
-        <dependency id="laget.Limiter" version="1.0.16" />
+        <dependency id="laget.Limiter" version="1.1.2" />
         <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
       <group targetFramework="netstandard2.0">
-        <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.3" />
-      </group>
-      <group targetFramework="netcoreapp3.1">
-        <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.3" />
-      </group>
-      <group targetFramework="netcoreapp2.1">
-        <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.3" />
-      </group>
-      <group targetFramework="net48">
-        <dependency id="laget.Limiter" version="1.0.16" />
-        <dependency id="MongoDb.Driver" version="2.12.3" />
-      </group>
-      <group targetFramework="net472">
-        <dependency id="laget.Limiter" version="1.0.16" />
+        <dependency id="laget.Limiter" version="1.1.2" />
         <dependency id="MongoDb.Driver" version="2.12.3" />
       </group>
     </dependencies>
@@ -44,9 +28,5 @@
     <file src="..\assets\icon.png" target="assets\" />
     <file src=".\bin\Release\netstandard2.1\*" target="lib\netstandard2.1\" />
     <file src=".\bin\Release\netstandard2.0\*" target="lib\netstandard2.0\" />
-    <file src=".\bin\Release\netcoreapp3.1\*" target="lib\netcoreapp3.1\" />
-    <file src=".\bin\Release\netcoreapp2.1\*" target="lib\netcoreapp2.1\" />
-    <file src=".\bin\Release\net48\*" target="lib\net48\" />
-    <file src=".\bin\Release\net472\*" target="lib\net472\" />
   </files>
 </package>
