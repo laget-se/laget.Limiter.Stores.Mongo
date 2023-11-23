@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>laget.Limiter.Stores.Mongo</id>
+    <title>laget.Limiter.Stores.Mongo</title>
+    <version>$version$</version>
+    <authors>laget.se</authors>
+    <owners>laget.se</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MongoDB store implementation for laget.Limiter...</description>
+    <summary></summary>
+    <license type="expression">Apache-2.0</license>
+    <projectUrl>https://laget.se</projectUrl>
+    <icon>assets\icon.png</icon>
+    <readme>assets\README.md</readme>
+    <repository type="git" url="https://github.com/laget-se/laget.Limiter.Stores.Mongo" branch="master" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="laget.Limiter" version="1.2.25" />
+        <dependency id="MongoDb.Driver" version="2.18.0" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="laget.Limiter" version="1.2.25" />
+        <dependency id="MongoDb.Driver" version="2.18.0" />
+      </group>
+      <group targetFramework="netstandard2.1">
+        <dependency id="laget.Limiter" version="1.2.25" />
+        <dependency id="MongoDb.Driver" version="2.18.0" />
+      </group>
+      <group targetFramework="netstandard2.0">
+        <dependency id="laget.Limiter" version="1.2.25" />
+        <dependency id="MongoDb.Driver" version="2.18.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\README.md" target="assets\" />
+    <file src="..\assets\icon.png" target="assets\" />
+    <file src=".\bin\Release\net8.0\*" target="lib\net8.0\" />
+    <file src=".\bin\Release\net6.0\*" target="lib\net6.0\" />
+    <file src=".\bin\Release\netstandard2.1\*" target="lib\netstandard2.1\" />
+    <file src=".\bin\Release\netstandard2.0\*" target="lib\netstandard2.0\" />
+  </files>
+</package>
