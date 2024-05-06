@@ -17,19 +17,19 @@
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="laget.Limiter" version="1.2.26" />
-        <dependency id="MongoDb.Driver" version="2.24.0" />
+        <dependency id="MongoDb.Driver" version="2.25.0" />
       </group>
       <group targetFramework="net6.0">
         <dependency id="laget.Limiter" version="1.2.26" />
-        <dependency id="MongoDb.Driver" version="2.24.0" />
+        <dependency id="MongoDb.Driver" version="2.25.0" />
       </group>
       <group targetFramework="netstandard2.1">
         <dependency id="laget.Limiter" version="1.2.26" />
-        <dependency id="MongoDb.Driver" version="2.24.0" />
+        <dependency id="MongoDb.Driver" version="2.25.0" />
       </group>
       <group targetFramework="netstandard2.0">
         <dependency id="laget.Limiter" version="1.2.26" />
-        <dependency id="MongoDb.Driver" version="2.24.0" />
+        <dependency id="MongoDb.Driver" version="2.25.0" />
       </group>
     </dependencies>
   </metadata>
